@@ -1,0 +1,27 @@
+<ion-view title="Pokemon">
+	<ion-content padding="true" class="has-header">
+	<!--listando pokemons-->
+		<div class="list">
+		    <a class="item item-avatar" ng-repeat="item in pokemon" >
+		      <img src="../img/pokebola.png">
+		      {{item.name}}
+		    </a>
+		</div>
+		
+	</ion-content>
+
+	<!--menu-->
+	<ion-tabs class="tabs-assertive">
+		<!--icone do home-->
+        <ion-tab icon="ion-home" ui-sref="home">
+          <ion-nav-view name="home"></ion-nav-view>
+        </ion-tab>
+
+		<!--icone da lista-->
+        <ion-tab icon="ion-ios-list" ui-sref="pokemon">
+          <ion-nav-view name="pokemon"></ion-nav-view>
+        </ion-tab>
+
+	</ion-tabs>
+	
+</ion-view>
